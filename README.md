@@ -1,14 +1,18 @@
-# Predicting customer satisfaction (Invistico Airlines)
+# Invistico Airlines: Predicting Passenger Satisfaction
 
-## Purpose
-Apply supervised machine learning models to accurately predict customer dissatisafction and calculate feature importances, such that targeted customer loyalty schemes and specific services can be priortieed for improvement.
+## Motivation
+Apply supervised machine learning models to accurately predict airline passenger satisfaction/dissatisfaction and calculate feature importances, such that targeted customer loyalty schemes and the improvement of services can be prioritized.
 
-## Skills demonstrated
-Data analysis and visualization using pandas and matplotlib.pyplot.
-Machine learning using scikit-learn's RandomForestClassifier (and xgb's XGBClassifier), as well as other tools for model optimisation and evaluation provided by scikit-learn.
+## File Links
 
-## User instructions
-Read [overview report](https://github.com/dilraj451/Airline-Passenger-Satisfaction-Prediction/blob/main/report.pdf). If you wish to view further details/code, navigate through the [Jupyter Notebook](https://github.com/dilraj451/Airline-Passenger-Satisfaction-Prediction/blob/main/invistico_airline.ipynb); if you wish to run any cells to experiment for yourself, ensure that you begin with the first and run them in order.
+* [Overview Report](https://github.com/dilraj451/Airline-Passenger-Satisfaction-Prediction/blob/main/report.pdf)
+* [Jupyter Notebook](https://github.com/dilraj451/Airline-Passenger-Satisfaction-Prediction/blob/main/invistico_airline.ipynb) containing full analysis
 
-## Conclusion
-Recall values of ~93% by both machine learning models massively surpoasses baseline model and is comparable to high quality models in similar classification scenarios. Averaged feature importance data indicates inflight entertainment, seat comfort, and ease of online booking are the three most importnat services impacting passenger satisfaction.
+## Methodology
+* Exploratory Data Analysis (EDA) using pandas, matplotlib, and ydata (for initial automated EDA report).
+* Data Cleaning carried out by use of pandas functions to remove duplicates, encode categorical features, and fill blank fields.
+* Machine learning models (RandomForestClassifier and XGBClassifier) were fine-tuned using cross-validation methods to optimize each models parameters and their performances evaluated against a basseline model; methods for hyperparameter optimisation and model evaluation were provided by scikit-learn.
+
+## Conclusions
+* Recall values of ~93% by both machine learning models massively surpoasses baseline model and is comparable to high quality models in similar classification scenarios.
+* Averaged feature importance data indicates inflight entertainment, seat comfort, and ease of online booking are the three most importnat services impacting passenger satisfaction.
